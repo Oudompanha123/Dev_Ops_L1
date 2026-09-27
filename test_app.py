@@ -1,10 +1,7 @@
-from app import farewell
+from app import greet, farewell
 
+assert greet("Dara") == "Hello, Dara!"
 assert farewell("Dara") == "Goodbye, Dara!"
-print("Farewell test passed")
-from app import farewell
-assert farewell("Dara") == "Goodbye, Dara!"
-print("Farewell test passed")
-from app import farewell
-assert farewell("Dara") == "Goodbye, Dara!"
-print("Farewell test passed")
+assert greet("") == "Hello, World!"
+
+print("All tests passed")
