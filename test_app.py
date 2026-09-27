@@ -1,17 +1,10 @@
-#!/usr/bin/env python3
-"""Small test application created by assistant.
+from app import farewell
 
-Run with: python test_app.py [args...]
-"""
-
-import sys
-
-
-def main():
-    print("Hello from test_app!")
-    if len(sys.argv) > 1:
-        print("Args:", " ".join(sys.argv[1:]))
-
-
-if __name__ == "__main__":
-    main()
+assert farewell("Dara") == "Goodbye, Dara!"
+print("Farewell test passed")
+from app import farewell
+assert farewell("Dara") == "Goodbye, Dara!"
+print("Farewell test passed")
+from app import farewell
+assert farewell("Dara") == "Goodbye, Dara!"
+print("Farewell test passed")
